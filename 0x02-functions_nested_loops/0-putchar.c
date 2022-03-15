@@ -1,20 +1,18 @@
 #include "main.h"
+
 /**
- * main - Entry Block
- * Description: prints holberton on new line
+ * print_alphabet - print alphabet in lowercase
+  *
  * Return: 0
  */
-int main(void)
+void print_alphabet(void)
 {
-	char c[8] = "_putchar";
+	char letter = 'a';
 
-	int i = 0;
-
-	while (i < 8)
+	while (letter <= 'z')
 	{
-		_putchar(c[i]);
-		i++;
+		_putchar(letter);
+		letter++;
 	}
 	_putchar('\n');
-	return (0);
 }
